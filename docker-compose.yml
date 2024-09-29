@@ -9,4 +9,10 @@ services:
     expose:
       - 8000
       - 9443
+    networks:
+      - default
+
+networks:
+  default:
+    driver: bridge
 
