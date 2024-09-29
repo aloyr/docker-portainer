@@ -1,0 +1,12 @@
+---
+services:
+  portainer:
+    image: portainer/portainer-ce:2.21.2
+    restart: always
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /opt/docker/portainer/data:/data
+    expose:
+      - 8000
+      - 9443
+
